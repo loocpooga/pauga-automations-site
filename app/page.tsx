@@ -12,7 +12,9 @@ export default function Home() {
         </p>
 
         <a
-          href="#contact"
+          href="https://calendly.com/lukepauga/30min"
+          target="_blank"
+          rel="noreferrer"
           className="inline-block bg-black text-white px-6 py-3 rounded-md font-medium"
         >
           Book a Free Consultation
@@ -51,7 +53,9 @@ export default function Home() {
           could do for your business.
         </p>
         <a
-          href="https://calendly.com/"
+          href="https://calendly.com/lukepauga/30min"
+          target="_blank"
+          rel="noreferrer"
           className="inline-block bg-black text-white px-6 py-3 rounded-md font-medium"
         >
           Book a Free Consultation
