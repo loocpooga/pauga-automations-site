@@ -7,7 +7,7 @@ export default function Home() {
         </h1>
         <p className="text-lg md:text-xl text-gray-700 mb-8">
           We help operations-heavy businesses reduce manual work, eliminate
-          inefficiencies, and gain clarity across their systems — without
+          inefficiencies, and gain clarity across their systems without
           disrupting how they already operate.
         </p>
 
