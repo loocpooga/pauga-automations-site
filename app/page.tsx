@@ -9,7 +9,7 @@ export default function Home() {
 
         <p className="text-lg md:text-xl text-gray-700 mb-8">
           We help operations-heavy businesses reduce manual work, eliminate
-          inefficiencies, and gain clarity across their systems without
+          inefficiencies, and gain clarity across their systems — without
           disrupting how they already operate.
         </p>
 
@@ -21,6 +21,45 @@ export default function Home() {
         >
           Book a Free Consultation
         </a>
+      </section>
+
+      {/* Credibility */}
+      <section className="max-w-5xl mx-auto px-6 pb-16">
+        <div className="border rounded-md p-6">
+          <h2 className="text-xl font-semibold mb-2">
+            Built by a data engineer
+          </h2>
+          <p className="text-gray-700">
+            I work hands-on with real, often messy operational systems — CRMs,
+            spreadsheets, scheduling tools, and internal workflows — and turn
+            them into clean automations and clear, reliable dashboards.
+          </p>
+        </div>
+      </section>
+
+      {/* Platforms & tools */}
+      <section className="max-w-5xl mx-auto px-6 pb-16">
+        <h2 className="text-xl font-semibold mb-4">
+          Platforms and tools I’ve worked with
+        </h2>
+
+        <p className="text-gray-700 mb-6">
+          Experience integrating and building workflows across a wide range of
+          industry-standard tools used by operations-heavy teams.
+        </p>
+
+        <ul className="grid grid-cols-2 md:grid-cols-3 gap-y-2 text-gray-700">
+          <li>JobNimbus</li>
+          <li>Housecall Pro</li>
+          <li>Google Sheets</li>
+          <li>Subcontractor Hub</li>
+          <li>Enerflo</li>
+          <li>Jobber</li>
+          <li>HubSpot</li>
+          <li>Salesforce</li>
+          <li>GoHighLevel</li>
+          <li>And many more</li>
+        </ul>
       </section>
 
       {/* Who we help */}
