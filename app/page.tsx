@@ -1,3 +1,6 @@
+const ctaButtonClasses =
+  "inline-block bg-black text-white px-6 py-3 rounded-md font-medium transition-all duration-200 ease-out hover:scale-105 hover:shadow-lg active:scale-95";
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-white text-gray-900">
@@ -17,7 +20,7 @@ export default function Home() {
           href="https://calendly.com/lukepauga/30min"
           target="_blank"
           rel="noreferrer"
-          className="inline-block bg-black text-white px-6 py-3 rounded-md font-medium"
+          className={ctaButtonClasses}
         >
           Book a Free Consultation
         </a>
@@ -129,7 +132,7 @@ export default function Home() {
           href="https://calendly.com/lukepauga/30min"
           target="_blank"
           rel="noreferrer"
-          className="inline-block bg-black text-white px-6 py-3 rounded-md font-medium"
+          className={ctaButtonClasses}
         >
           Book a Free Consultation
         </a>
