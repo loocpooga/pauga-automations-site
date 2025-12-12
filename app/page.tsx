@@ -1,65 +1,62 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+    <main className="min-h-screen bg-white text-gray-900">
+      <section className="max-w-5xl mx-auto px-6 py-24">
+        <h1 className="text-4xl md:text-5xl font-bold mb-6">
+          Simplifying Operations Through Smart Automation
+        </h1>
+        <p className="text-lg md:text-xl text-gray-700 mb-8">
+          We help operations-heavy businesses reduce manual work, eliminate
+          inefficiencies, and gain clarity across their systems — without
+          disrupting how they already operate.
+        </p>
+
+        <a
+          href="#contact"
+          className="inline-block bg-black text-white px-6 py-3 rounded-md font-medium"
+        >
+          Book a Free Consultation
+        </a>
+      </section>
+
+      <section className="max-w-5xl mx-auto px-6 py-16 border-t">
+        <h2 className="text-2xl font-semibold mb-4">Who we help</h2>
+        <p className="text-gray-700 mb-6">
+          We work with service-based and operations-heavy businesses that manage
+          jobs, projects, customers, schedules, and multiple software tools.
+        </p>
+        <ul className="list-disc pl-6 text-gray-700 space-y-2">
+          <li>Service businesses & field teams</li>
+          <li>Construction & trades</li>
+          <li>Logistics and operations teams</li>
+          <li>Professional services</li>
+        </ul>
+      </section>
+
+      <section className="max-w-5xl mx-auto px-6 py-16 border-t">
+        <h2 className="text-2xl font-semibold mb-4">How we help</h2>
+        <ul className="list-disc pl-6 text-gray-700 space-y-2">
+          <li>Workflow automations that remove repetitive tasks</li>
+          <li>System integrations that keep tools in sync</li>
+          <li>Simple dashboards that bring key data into one place</li>
+        </ul>
+      </section>
+
+      <section id="contact" className="max-w-5xl mx-auto px-6 py-16 border-t">
+        <h2 className="text-2xl font-semibold mb-4">
+          Ready to simplify your operations?
+        </h2>
+        <p className="text-gray-700 mb-6">
+          Schedule a free, no-pressure consultation to explore what automation
+          could do for your business.
+        </p>
+        <a
+          href="https://calendly.com/"
+          className="inline-block bg-black text-white px-6 py-3 rounded-md font-medium"
+        >
+          Book a Free Consultation
+        </a>
+      </section>
+    </main>
   );
 }
