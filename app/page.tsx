@@ -1,5 +1,5 @@
 const ctaButtonClasses =
-  "inline-block bg-black text-white px-6 py-3 rounded-md font-medium transition-all duration-200 ease-out hover:scale-105 hover:shadow-lg active:scale-95";
+  "inline-block bg-black text-white px-6 py-3 rounded-md font-medium transition-all duration-200 ease-out hover:bg-gray-900 hover:scale-105 hover:shadow-lg active:scale-95";
 
 export default function Home() {
   const tools = [
@@ -36,9 +36,9 @@ export default function Home() {
         </div>
       </header>
 
-      <main className="min-h-screen bg-white text-gray-900">
+      <main className="min-h-screen bg-gray-50 text-gray-900">
         {/* Hero */}
-        <section className="max-w-5xl mx-auto px-6 py-24">
+        <section className="max-w-5xl mx-auto px-6 py-28">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
             Stop Losing Hours to Manual Work.
             <br />
@@ -47,7 +47,7 @@ export default function Home() {
             </span>
           </h1>
 
-          <p className="text-lg md:text-xl text-gray-700 mb-8">
+          <p className="text-lg md:text-xl text-gray-700 mb-10 max-w-3xl">
             We help operations-heavy businesses reduce manual work, eliminate
             inefficiencies, and gain clarity across their systems without
             disrupting how they already operate.
@@ -64,12 +64,12 @@ export default function Home() {
         </section>
 
         {/* Credibility */}
-        <section className="max-w-5xl mx-auto px-6 pb-16">
-          <div className="border rounded-md p-6 transition-all hover:shadow-md hover:border-gray-300">
+        <section className="max-w-5xl mx-auto px-6 pb-20">
+          <div className="bg-white border rounded-lg p-6 transition-all hover:shadow-md hover:border-gray-300">
             <h2 className="text-xl font-semibold mb-2">
               Built by a data engineer
             </h2>
-            <p className="text-gray-700">
+            <p className="text-gray-700 max-w-3xl">
               I work hands-on with real, often messy operational systems — CRMs,
               spreadsheets, scheduling tools, and internal workflows — and turn
               them into clean automations and clear, reliable dashboards.
@@ -78,12 +78,12 @@ export default function Home() {
         </section>
 
         {/* Platforms & tools */}
-        <section className="max-w-5xl mx-auto px-6 pb-16">
+        <section className="max-w-5xl mx-auto px-6 pb-20">
           <h2 className="text-xl font-semibold mb-4">
             Platforms and tools I&apos;ve worked with
           </h2>
 
-          <p className="text-gray-700 mb-6">
+          <p className="text-gray-700 mb-6 max-w-3xl">
             Experience integrating and building workflows across a wide range of
             industry-standard tools used by operations-heavy teams.
           </p>
@@ -92,49 +92,72 @@ export default function Home() {
             {tools.map((tool) => (
               <span
                 key={tool}
-                className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm"
+                className="px-3 py-1 bg-white border text-gray-700 rounded-full text-sm"
               >
                 {tool}
               </span>
             ))}
-            <span className="px-3 py-1 bg-gray-100 text-gray-500 rounded-full text-sm italic">
+            <span className="px-3 py-1 bg-white border text-gray-500 rounded-full text-sm italic">
               and many more
             </span>
           </div>
         </section>
 
-        {/* Social Proof */}
-        <section className="max-w-5xl mx-auto px-6 pb-16">
-          <h2 className="text-xl font-semibold mb-6">Recent wins</h2>
+       {/* What you’ll walk away with */}
+<section className="max-w-5xl mx-auto px-6 pb-20">
+  <div className="bg-white border rounded-lg p-8">
+    <h2 className="text-xl font-semibold mb-6">
+      What you’ll walk away with
+    </h2>
 
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="border rounded-md p-6 transition-all hover:shadow-md hover:border-gray-300">
-              <p className="text-gray-700 mb-2">
-                “Cut lead entry time from 15 minutes to under 30 seconds by
-                syncing our CRM with our scheduling tool.”
-              </p>
-              <p className="text-sm text-gray-500">
-                — Roofing company, 12 field techs
-              </p>
-            </div>
+    <p className="text-gray-700 mb-8 max-w-3xl">
+      Even if we don’t end up working together, the goal of the consultation
+      is for you to leave with clarity around what’s broken, what’s worth
+      fixing first, and what a better system could look like.
+    </p>
 
-            <div className="border rounded-md p-6 transition-all hover:shadow-md hover:border-gray-300">
-              <p className="text-gray-700 mb-2">
-                “Finally have a dashboard that shows job status in real-time
-                instead of hunting through three different systems.”
-              </p>
-              <p className="text-sm text-gray-500">
-                — Cleaning service, multi-location
-              </p>
-            </div>
-          </div>
-        </section>
+    <div className="grid md:grid-cols-2 gap-6">
+      <div className="border rounded-md p-6">
+        <h3 className="font-medium mb-2">Clear workflow map</h3>
+        <p className="text-gray-700 text-sm">
+          A simple breakdown of how your work flows today — including where
+          time, data, or money is being lost.
+        </p>
+      </div>
+
+      <div className="border rounded-md p-6">
+        <h3 className="font-medium mb-2">High-ROI automation ideas</h3>
+        <p className="text-gray-700 text-sm">
+          One to three automations that would have the biggest immediate
+          impact on efficiency.
+        </p>
+      </div>
+
+      <div className="border rounded-md p-6">
+        <h3 className="font-medium mb-2">Recommended system setup</h3>
+        <p className="text-gray-700 text-sm">
+          Guidance on how your tools should connect — CRMs, spreadsheets,
+          scheduling, and reporting.
+        </p>
+      </div>
+
+      <div className="border rounded-md p-6">
+        <h3 className="font-medium mb-2">Clear next steps</h3>
+        <p className="text-gray-700 text-sm">
+          Whether you build it yourself, hire someone, or work with me —
+          you’ll know exactly what to do next.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
         {/* Who we help */}
-        <section className="max-w-5xl mx-auto px-6 py-16 border-t">
+        <section className="max-w-5xl mx-auto px-6 py-20 border-t border-gray-200">
           <h2 className="text-2xl font-semibold mb-4">Who we help</h2>
 
-          <p className="text-gray-700 mb-6">
+          <p className="text-gray-700 mb-6 max-w-3xl">
             We work with businesses where{" "}
             <strong>operations teams are drowning in manual work</strong> —
             juggling jobs, customers, schedules, and tools that don&apos;t talk
@@ -150,7 +173,7 @@ export default function Home() {
         </section>
 
         {/* How we help */}
-        <section className="max-w-5xl mx-auto px-6 py-16 border-t">
+        <section className="max-w-5xl mx-auto px-6 py-20 border-t border-gray-200">
           <h2 className="text-2xl font-semibold mb-4">How we help</h2>
 
           <ul className="list-disc pl-6 text-gray-700 space-y-2">
@@ -161,12 +184,12 @@ export default function Home() {
         </section>
 
         {/* Consultation details */}
-        <section className="max-w-5xl mx-auto px-6 py-16 border-t">
+        <section className="max-w-5xl mx-auto px-6 py-20 border-t border-gray-200">
           <h2 className="text-2xl font-semibold mb-4">
             What a free consultation looks like
           </h2>
 
-          <p className="text-gray-700 mb-6">
+          <p className="text-gray-700 mb-6 max-w-3xl">
             A focused, no-pressure conversation designed to understand how your
             business operates today and where better systems or automation could
             make the biggest impact.
@@ -184,35 +207,13 @@ export default function Home() {
           </ul>
         </section>
 
-        {/* Objection Handler */}
-        <section className="max-w-5xl mx-auto px-6 py-16 border-t bg-gray-50">
-          <h2 className="text-2xl font-semibold mb-6">
-            Why not just hire a VA or use Zapier?
-          </h2>
-
-          <div className="space-y-4 text-gray-700">
-            <p>
-              <strong>VAs are great for execution</strong> — but they still do
-              things manually. We build systems that eliminate the manual work
-              entirely.
-            </p>
-            <p>
-              <strong>Zapier works for simple connections</strong> — but when
-              you need custom logic, data transformation, or tight integrations
-              with niche tools, you need someone who understands APIs,
-              databases, and operational workflows.
-            </p>
-            <p>That&apos;s where we come in.</p>
-          </div>
-        </section>
-
         {/* Final CTA */}
-        <section className="max-w-5xl mx-auto px-6 py-16 border-t">
+        <section className="max-w-5xl mx-auto px-6 py-24 border-t border-gray-200">
           <h2 className="text-2xl font-semibold mb-4">
             Ready to simplify your operations?
           </h2>
 
-          <p className="text-gray-700 mb-6">
+          <p className="text-gray-700 mb-8 max-w-3xl">
             Schedule a free, no-pressure consultation to explore what automation
             could do for your business.
           </p>
@@ -228,7 +229,7 @@ export default function Home() {
         </section>
 
         {/* Footer */}
-        <footer className="border-t bg-gray-50">
+        <footer className="border-t bg-white">
           <div className="max-w-5xl mx-auto px-6 py-8 text-center text-gray-600 text-sm">
             <p>© 2025 Pauga Automations. All rights reserved.</p>
           </div>
